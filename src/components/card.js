@@ -67,7 +67,7 @@ const cardAppender = (selector) => {
   // Append each card to the element in the DOM that matches the selector passed to the function.
   //
   axios.get('https://lambda-times-api.herokuapp.com/topics')
-
+// this took me forever and a lot of googleing haha
   .then(res => {
     res.data.topics.forEach(topic => {
 

@@ -70,9 +70,9 @@ const cardAppender = (selector) => {
 // this took me forever and a lot of googleing haha
   .then(res => {
     res.data.topics.forEach(topic => {
-
       axios.get('https://lambda-times-api.herokuapp.com/articles')
       .then(r => {
+        console.log('HERE', r.data);
         let target = document.querySelector(selector);
         
         if(topic === 'node.js'){
